@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0e30d983fd.js" crossorigin="anonymous"></script>
+    <!--COLOCAR AS OUTRAS METAS-->
+    <title>Corebiz - Go Beyond 2021</title>
+</head>
+<body>
+
+    <header> <!--Inicio menu-->
+        <div class="menuSection on"></div>
+            <div class="menuToggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </div>
+
+        <div class= "container-header" >
+            <img class="fotoMobile" src="/assets/imagens/logo/gobeyondLogo.png" alt="logo">
+            <nav>
+                <ul>
+                   
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="categoria1"><a href="#">Categoria 1</a></li>
+                    <li class="categoria2"><a href="#">Categoria 2</a></li>
+                    <li class="contato"><a href="#">Contato</a></li>
+
+                    <form>
+                        <label for="pesquisa"></label>
+                        <input type="search" id="pesquisa" placeholder="O que está procurando?">
+                        <i class="fas fa-search"></i>
+                    </form>
+
+                
+                    <li class="minhaConta"><i class="fas fa-user"></i> <a href="#">Minha Conta</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile">
+                <ul>
+                    <li>    
+                    <img class="bola" src="/assets/imagens/elements/Ellipse.png" alt="esfera-do-carrinho"> <span class="quantidadeCarrinho">1</span><a href="#"><i id="carrinho" class="fas fa-shopping-cart"></i></li></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header> <!--Fim do menu-->
+    
+<article>    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!--Imagens a ser mostrada é quantidade a ser criado-->
+        <div class="mySlides fade">            
+            <img src="/assets/imagens/background/banner3.png" style="width:100%">           
+        </div>
+  
+        <div class="mySlides fade">            
+            <img src="/assets/imagens/background/banner3.png" style="width:100%">            
+        </div>
+  
+        <div class="mySlides fade">           
+            <img src="/assets/imagens/background/banner3.png" style="width:100%">            
+        </div>
+
+        <div class="mySlides fade">           
+            <img src="/assets/imagens/background/banner3.png" style="width:100%">            
+        </div>
+  
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!--Quantidades de circulos-->
+        <div class="circulos" style="text-align:center"> 
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    
+  
+
+</article>
+
+<article id="vendidos" >
+    <h3>Mais Vendidos</h3>
+</article>
+
+<article class="pro"><!--Inicio dos produtos-->
+
+
+    <figure>
+        <figcaption>
+            <img class="triangulo" src="/assets/imagens/elements/Polygon.png" alt="oferta">
+            <span class="oferta">OFF</span> 
+            <img src="/assets/imagens/elements/produto.png" alt="sapato">
+            <span>SAPATO FLOATER PRETO</span><br>
+            <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br>
+            <span>de R$ 299,00</span><br>
+            <strong>por R$ 259,90</strong><br>
+            <span>ou 9x de R$28,87</span><br>                     
+            <a href="https://web.whatsapp.com/send?phone=558193120793" target="_blank"><button><i class="fab fa-whatsapp"></i>  COMPRAR</button></a>
+        </figcaption>
+    </figure>
+   
+    <figure>
+        <figcaption>
+            <img class="triangulo" src="/assets/imagens/elements/Polygon.png" alt="oferta">
+            <span class="oferta">OFF</span> 
+            <img src="/assets/imagens/elements/produto.png" alt="sapato">
+            <span>SAPATO FLOATER PRETO</span><br>
+            <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br>
+            <span>de R$ 299,00</span><br>
+            <strong>por R$ 259,90</strong><br>
+            <span>ou 9x de R$28,87</span><br>
+            <a href="https://web.whatsapp.com/send?phone=558193120793" target="_blank"><button><i class="fab fa-whatsapp"></i>  COMPRAR</button></a>
+        </figcaption>
+    </figure>
+   
+    <figure>
+        <figcaption>
+            <img class="triangulo" src="/assets/imagens/elements/Polygon.png" alt="oferta">
+            <span class="oferta">OFF</span> 
+            <img src="/assets/imagens/elements/produto.png" alt="sapato">
+            <span>SAPATO FLOATER PRETO</span><br>
+            <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br>
+            <span>de R$ 299,00</span><br>
+            <strong>por R$ 259,90</strong><br>
+            <span>ou 9x de R$28,87</span><br>
+            <a href="https://web.whatsapp.com/send?phone=558193120793" target="_blank"><button><i class="fab fa-whatsapp"></i>  COMPRAR</button></a>
+        </figcaption>        
+    </figure>
+
+    
+    <figure>
+        <figcaption>
+            <img class="triangulo" src="/assets/imagens/elements/Polygon.png" alt="oferta">
+            <span class="oferta">OFF</span> 
+            <img src="/assets/imagens/elements/produto.png" alt="sapato">
+            <span>SAPATO FLOATER PRETO</span><br>
+            <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br>
+            <span>de R$ 299,00</span><br>
+            <strong>por R$ 259,90</strong><br>
+            <span>ou 9x de R$28,87</span><br>
+            <a href="https://web.whatsapp.com/send?phone=558193120793" target="_blank"><button><i class="fab fa-whatsapp"></i>  COMPRAR</button></a>
+        </figcaption>       
+    </figure>
+
+    
+    <figure>
+        <figcaption>
+            <img class="triangulo" src="/assets/imagens/elements/Polygon.png" alt="oferta">
+            <span class="oferta">OFF</span> 
+            <img src="/assets/imagens/elements/produto.png" alt="sapato">
+            <span>SAPATO FLOATER PRETO</span><br>
+            <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br>
+            <span>de R$ 299,00</span><br>
+            <strong>por R$ 259,90</strong><br>
+            <span>ou 9x de R$28,87</span><br>
+            <a href="https://web.whatsapp.com/send?phone=558193120793" target="_blank"><button><i class="fab fa-whatsapp"></i>  COMPRAR</button></a>
+        </figcaption>
+    </figure>
+
+</article>
+
+<article id="formulario"><!--Inicio do formulario-->
+    <h4>Participe de nossas news com promoções e novidades!</h4>
+    <form>
+        <label for="nome"></label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required autofocus>
+
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Digite seu email" required><span class="esconder"><br></span> 
+
+        <input class="cadastro" type="submit" value="Eu quero!">
+
+    </form>
+</article><!--Fim do formulario-->
+
+<footer>
+    <div class="endereço">
+       <span class="localizaçao">Localização</span><br><br>
+       Avenida Andrômeda, 2000.Bloco 6 e 8 <br>
+       Alphavile SP <br>
+       brasil@corebiz.ag <br>
+       +55 11 3090 1039
+    </div>
+
+    <div class="botoesFooter">
+        <input class="entreContato" type="submit" value="ENTRE EM CONTATO"><br>
+        <a href="mailto:ranilsonjunior2@gmail.com?Subject=T%C3%ADtulo%20da%20mensagem" target="_blank"><input class="faleConosco" type="submit" value="FALE COM O NOSSO CONSULTOR ONLINE"></a>
+    </div>
+
+    <div class="logosFooter">
+        <a href="https://www.corebiz.ag/pt/" target="_blank">
+            <div class="logoCorebiz">
+                <img src="/assets/imagens/elements/Created by.png" alt="created_by"><br>
+                <img src="/assets/imagens/elements/footerCorebiz.png" alt="corebiz">
+            </div>
+        </a>
+
+        <a href="https://vtex.com/br-pt/" target="_blank">
+            <div class="logoVtex">
+                <img src="/assets/imagens/elements/Powered by.png" alt="power_by"><br>
+                <img src="/assets/imagens/elements/footerVtex.png" alt="vtex">
+            </div>
+        </a>
+    </div>    
+</footer>
+
+</body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="/slick-1.8.1/slick/slick.min.js"></script>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* { /*Reset na página*/
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Nunito', sans-serif;
+    }   
+
+/*Setando as cores*/    
+:root {
+    --cinzaEscuro: #333333;
+    --amarelo: #E9BF33;
+    --verde: #00e676;
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinzaClaro: #F2F2F2;
+    --cinza: #7A7A7A;
+}
+
+ /*Inicio do menu*/
+header img {
+    
+    padding-top: 10px;
+    padding-left: 100px;
+}
+.fotoMobile {
+  display: none;
+}
+
+header .container-header{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    position: relative;
+}
+
+ul li {  
+    display: inline;
+}
+
+ul li a {
+    list-style: none;
+    line-height: 10px;
+    font-size: 18px;
+    display: inline;
+    color: var(--cinzaEscuro);
+    outline: none;
+    text-decoration: none;
+}
+.mobile {
+  margin-left: 150px;
+  margin-bottom: 3px;
+}
+
+.home {
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.categoria1 {
+    padding-right: 20px;
+}
+
+.categoria2 {
+    padding-right: 20px;
+}
+
+.minhaConta {
+    padding-left: 40px;
+    position: absolute;  
+}
+
+form {
+    padding-left: 80px;
+    display: inline;
+}
+
+#carrinho {
+    padding-left: 36px;
+    padding-top: 6px;
+}
+
+#pesquisa {
+  border: none;
+  border-bottom:2px solid var(--cinza);
+  outline: none;
+  width: 200px;
+}
+
+.bola {
+  position: absolute;
+  padding-left: 52px;
+  padding-top: 1px;
+}
+
+.quantidadeCarrinho {
+  position: absolute;
+  margin-left: 55px;
+  font-size: 12px;
+  color: var(--branco);
+  font-weight: 600;
+}
+
+/*Fim do menu*/
+
+
+/*Começo do Sideshow*/
+.slideshow-container { 
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--amarelo);
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+}
+
+
+/*Posição do botão direito*/
+.next {
+  right: 0; /*Faz o botão da direita ir para a ponta do lado direito*/
+  border-radius: 3px 0 0 3px;
+}
+
+/*Configuração dos dots*/
+.dot {
+  cursor: pointer; /*mudar o cursor do mouse*/
+  height: 10px; /*altura do circulo*/
+  width: 10px; /*largura do circulo*/
+  margin: 0 2px; /*espassamento de um circulo do outro*/
+  background-color: var(--amarelo); /*cor inicial co circulo*/
+  border-radius: 50%; /*fas ele virar um circulo*/
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/*Animação quando passa a página*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*Final do Sideshow*/
+
+/*Inicio dos vendidos*/
+h3 {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--preto);
+  border-bottom: 4px solid var(--amarelo);
+  border-width: 6px;
+  width: 200px;
+}
+
+
+/*Inicio do produto*/
+figure {
+    margin-left: 40px;
+    width: 216px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px  0px  6px var(--cinza);
+    margin-bottom: 100px;
+    display: inline-block;
+}
+figure button {
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    background-color: var(--verde);
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--branco);
+    width: 150px;
+}
+.zap {
+margin-bottom: 5px;
+}
+.triangulo {
+    position: absolute;
+    right: 0px;
+}
+.oferta {
+    position: absolute;
+    color: var(--branco);
+    right: 12px;
+    top: 12px;
+}
+.pro {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 50px;
+}
+
+/*Fim do produto*/
+
+/*Inicio do formulario*/
+#formulario {
+  height: 146px;
+  background-color: var(--cinzaClaro);
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 16px;
+  padding-top: 24px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: var(--cinza);
+}
+
+#formulario .cadastro{
+  color: var(--branco);
+  background-color: var(--amarelo);
+  width: 140px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#email, #nome {
+  background-color: var(--branco);
+  height: 48px;
+  width: 280px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+.esconder {
+  display: none;
+}
+/*Fim do formulario*/
+
+/*Inicio do footer*/
+footer {
+  position: relative;
+  color: var(--branco);
+  height: 250px;
+  background-color: var(--preto);
+}
+
+.localizaçao {
+  font-weight: 900;
+  border-bottom: 4px solid var(--amarelo);
+
+}
+
+.endereço {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.entreContato, .faleConosco {
+  background-color: var(--amarelo);
+  color: var(--branco);
+  border-radius: 5px;
+  height: 38px;
+  width: 195px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.entreContato {
+  margin-bottom: 25px;
+}
+
+.botoesFooter {
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 70px;
+}
+
+.endereço {
+  position: absolute;
+}
+
+.logosFooter {
+  position: absolute;
+  margin-left: 1050px;
+  margin-top: 95px;
+}
+
+.logoVtex {
+  position: absolute;
+  margin-left: 100px;
+}
+
+.logoCorebiz {
+  position: absolute;
+}
+
+/*Media queries*/
+@media (max-width: 980px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .one,
+  .two,
+  .three {
+    background-color: var(--preto);
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    
+  }
+  .menuToggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+  .mobile {
+    margin-bottom: 45px;
+    margin-left: 30px;
+  }
+  .fotoMobile {
+    display: block;
+    margin-bottom: 45px;
+    margin-left: 30px;
+  }
+  .botoesFooter {
+    margin-top: 100px;
+    margin-left: 140px;
+  }
+  .entreContato, .faleConosco {
+    height: 20px;
+    width: 100px;
+    font-size: 8px;
+    
+  }
+  .endereço {
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  .logosFooter {
+    position: absolute;
+    margin-left: 110px; 
+    margin-top: 210px;
+    border: 1px solid red;
+  }
+  footer {
+    height: 300px;
+  }
+  #formulario {
+    font-size: 12px;
+    height: 200px;
+  }
+  #email, #nome {
+    height: 25px;
+    width: 200px;
+    text-align: center;
+  }
+  #nome {
+    margin-right: 0px;
+  }
+  #formulario .cadastro {
+  margin-top: 10px;
+  width: 150px;
+  height: 28px;
+  font-size: 10px;
+  }
+  .esconder {
+    display: block;
+  }
+}
+
